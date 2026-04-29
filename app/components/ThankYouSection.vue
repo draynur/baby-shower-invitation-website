@@ -3,8 +3,8 @@
     <div class="thankyou-block">
       <div class="big-script">Thank you</div>
       <p>
-        We are so grateful for each of you who will celebrate this beautiful season with us.
-        Your love and support mean the world to Suzanne and her growing family.
+        We are so grateful for each of you who will celebrate this beautiful moment with us.
+        Your love and support mean the world to Suzanne and our growing family.
       </p>
     </div>
   </section>

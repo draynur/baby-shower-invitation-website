@@ -17,11 +17,6 @@
         </div>
       </div>
 
-      <div class="hero-below">
-        <div class="hero-venue-name">Analog Wine Library</div>
-        <div class="hero-venue-addr">129 N Race St · Urbana, IL</div>
-      </div>
-
     </div>
   </div>
 </template>
