@@ -1,0 +1,110 @@
+@use 'variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Dancing+Script:wght@500;700&family=Jost:wght@300;400;500&display=swap');
+
+:root {
+  --f-sage: #{$f-sage};
+  --f-rose: #{$f-rose};
+  --f-gold: #{$f-gold};
+  --cream: #{$cream};
+  --sage: #{$sage};
+  --sage-light: #{$sage-light};
+  --sage-dark: #{$sage-dark};
+  --rose: #{$rose};
+  --rose-light: #{$rose-light};
+  --rose-pale: #{$rose-pale};
+  --gold: #{$gold};
+  --text: #{$text};
+  --text-light: #{$text-light};
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 24px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 40px;
+  line-height: 1.2;
+
+  @media (max-width: 640px) {
+    font-size: 28px;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.btn {
+  display: inline-block;
+  background: var(--sage);
+  color: #fff;
+  border: none;
+  padding: 14px 48px;
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 28px;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+
+  &:hover {
+    background: var(--sage-dark);
+    transform: translateY(-1px);
+  }
+
+  &.btn-rose {
+    background: var(--rose);
+
+    &:hover {
+      background: #a8655b;
+    }
+  }
+}

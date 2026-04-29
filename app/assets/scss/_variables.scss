@@ -1,0 +1,16 @@
+// Colors
+$cream: #FAF6EF;
+$sage: #7A9B6E;
+$sage-light: #A8C299;
+$sage-dark: #4E6E44;
+$rose: #C4847A;
+$rose-light: #E8B5AD;
+$rose-pale: #F5E6E3;
+$gold: #B89660;
+$text: #3A3028;
+$text-light: #7A6A5A;
+
+// SVG filters
+$f-sage: invert(58%) sepia(25%) saturate(350%) hue-rotate(70deg) brightness(85%);
+$f-rose: invert(60%) sepia(25%) saturate(400%) hue-rotate(320deg) brightness(95%);
+$f-gold: invert(65%) sepia(40%) saturate(350%) hue-rotate(5deg) brightness(80%);
