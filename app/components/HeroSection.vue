@@ -12,7 +12,7 @@
         <div class="hero-join">Join us for a baby shower honoring</div>
         <div class="hero-name">Suzanne Runyard</div>
         <div class="hero-meta">
-          <strong>Saturday, June 14, 2025</strong><br>
+          <strong>Sunday, June 14, 2025</strong><br>
           1:00 — 3:00 PM
         </div>
       </div>
@@ -48,6 +48,11 @@
   @media (max-width: 700px) {
     width: 100%;
     max-width: 445px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    max-width: 305px;
   }
 }
 
@@ -126,6 +131,7 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .hero-name {

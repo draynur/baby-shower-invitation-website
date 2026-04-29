@@ -7,15 +7,11 @@
         <p>Shelly Runyard<br>&amp; Megan DeLoriea</p>
       </div>
       <div class="footer-col">
-        <h4>Questions?</h4>
-        <p>Reach out to your hosts<br>for any questions</p>
-      </div>
-      <div class="footer-col">
         <h4>RSVP Deadline</h4>
         <p>June 1, 2025</p>
       </div>
     </div>
-    <p class="footer-small">Baby Shower · June 14, 2025 · Analog Wine Library · Urbana, IL</p>
+    <p class="footer-small">Site by John</p>
   </footer>
 </template>
 

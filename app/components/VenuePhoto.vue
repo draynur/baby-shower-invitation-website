@@ -1,6 +1,6 @@
 <template>
   <div class="venue-photo-wrap">
-    <img class="photo-strip" src="/fig-assets/venue.jpg" alt="Analog Wine Library">
+    <img class="photo-strip" src="/analog-5 1.png" alt="Analog Wine Library">
     <p class="photo-caption">Analog Wine Library · Urbana, Illinois</p>
   </div>
 </template>

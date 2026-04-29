@@ -6,7 +6,6 @@
     <FloralDivider />
     <DirectionsSection />
     <FloralDivider />
-    <FloralDivider />
     <ThankYouSection />
     <SiteFooter />
   </main>

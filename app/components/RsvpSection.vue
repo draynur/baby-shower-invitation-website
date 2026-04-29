@@ -2,6 +2,8 @@
   <section class="fade-in" id="rsvp">
     <div class="section-label">You're Invited</div>
     <h2 class="section-title">RSVP</h2>
+    <p class="rsvp-note">This is a ladies-only celebration — we can't wait to gather with the women in Suzanne's life.</p>
+
     <div class="rsvp-wrap">
 
       <form v-if="!submitted" @submit.prevent="handleSubmit">
@@ -64,6 +66,7 @@
         <div class="form-center">
           <button type="submit" class="btn">Send RSVP</button>
           <p class="rsvp-deadline">Please RSVP by June 1, 2025</p>
+          <p class="rsvp-confirm-note">If you're joining us, you'll receive an email confirmation with the gift registry included.</p>
         </div>
       </form>
 
@@ -96,6 +99,16 @@ function handleSubmit() {
 </script>
 
 <style lang="scss" scoped>
+.rsvp-note {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--text-light);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
 .rsvp-wrap {
   background: #fff;
   border-radius: 4px;
@@ -198,6 +211,19 @@ input[type='radio'] {
   text-transform: uppercase;
   color: var(--text-light);
   margin-top: 20px;
+}
+
+.rsvp-confirm-note {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--text-light);
+  margin-top: 12px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .rsvp-success {

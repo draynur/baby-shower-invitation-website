@@ -5,12 +5,9 @@
     <div class="directions-grid">
       <div class="map-embed">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.2!2d-88.2073!3d40.1105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd759c88f5e3d%3A0x8dba8caacc4acf7d!2sAnalog%20Wine%20Library!5e0!3m2!1sen!2sus!4v1"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Analog Wine Library map"
-        ></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48818.13811384528!2d-88.28364129463476!3d40.11702534293577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd775073eaaa9%3A0xcd9c7d2e931ed2a2!2sAnalog%20Wine%20Library!5e0!3m2!1sen!2sus!4v1777438755741!5m2!1sen!2sus"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="directions-info">
         <h3>Analog Wine Library</h3>
@@ -19,17 +16,37 @@
           Urbana, IL 61801
         </p>
         <p class="directions-note">
-          Street parking is available along Race Street and nearby lots. The venue is located in downtown Urbana, just steps from the heart of the neighborhood.
+          Street parking is available along Race Street and nearby lots. The venue is located in downtown Urbana, just
+          blocks away from our home.
         </p>
-        <a href="https://maps.google.com/?q=Analog+Wine+Library+129+N+Race+St+Urbana+IL" target="_blank" rel="noopener">
-          Open in Google Maps →
-        </a>
+        <div class="link-group">
+          <a href="https://maps.google.com/?q=Analog+Wine+Library+129+N+Race+St+Urbana+IL" target="_blank"
+            rel="noopener">
+            Open in Google Maps →
+          </a>
+          <a href="maps://maps.apple.com/?address=129+N+Race+St,+Urbana,+IL+61801" target="_blank" rel="noopener"
+            class="apple-maps-link">
+            Open in Apple Maps →
+          </a>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
+.link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  margin-top: 20px;
+  width: fit-content;
+
+  * {
+    width: fit-content;
+  }
+}
+
 .directions-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
