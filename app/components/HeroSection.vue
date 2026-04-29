@@ -79,7 +79,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 8px 40px rgba(78, 110, 68, 0.18);
+  box-shadow: 0 8px 40px rgba(96, 123, 86, 0.8);
 
   @media (max-width: 700px) {
     width: 80%;
