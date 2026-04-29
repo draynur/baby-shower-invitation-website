@@ -110,7 +110,7 @@
 .hero-subtitle {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.85);
@@ -126,7 +126,7 @@
 
 .hero-join {
   font-family: 'Jost', sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
@@ -148,7 +148,7 @@
 }
 
 .hero-meta {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.75);
@@ -180,7 +180,7 @@
 }
 
 .hero-venue-addr {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--text-light);

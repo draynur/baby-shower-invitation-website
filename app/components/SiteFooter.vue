@@ -8,7 +8,7 @@
       </div>
       <div class="footer-col">
         <h4>RSVP Deadline</h4>
-        <p>June 1, 2025</p>
+        <p><span class="deadline-date">June 1, 2025</span></p>
       </div>
     </div>
     <p class="footer-small">Site by John</p>
@@ -44,7 +44,7 @@ footer {
 
 .footer-col {
   h4 {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
@@ -54,7 +54,7 @@ footer {
   p,
   a {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 17px;
+    font-size: 18px;
     font-style: italic;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
@@ -66,8 +66,16 @@ footer {
   }
 }
 
+.deadline-date {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--rose-light);
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
 .footer-small {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.35);
   margin-top: 20px;

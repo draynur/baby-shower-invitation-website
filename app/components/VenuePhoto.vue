@@ -18,7 +18,7 @@
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 17px;
   color: var(--text-light);
   padding: 14px 0 0;
   letter-spacing: 1px;

@@ -65,7 +65,7 @@
         </div>
         <div class="form-center">
           <button type="submit" class="btn">Send RSVP</button>
-          <p class="rsvp-deadline">Please RSVP by June 1, 2025</p>
+          <p class="rsvp-deadline">Please RSVP by<strong>June 1, 2025</strong></p>
           <p class="rsvp-confirm-note">If you're joining us, you'll receive an email confirmation with the gift registry included.</p>
         </div>
       </form>
@@ -103,7 +103,7 @@ function handleSubmit() {
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 17px;
+  font-size: 19px;
   color: var(--text-light);
   margin-bottom: 32px;
   line-height: 1.6;
@@ -143,7 +143,7 @@ function handleSubmit() {
 }
 
 label {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--text-light);
@@ -157,7 +157,7 @@ textarea {
   background: transparent;
   padding: 10px 2px;
   font-family: 'Jost', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--text);
   outline: none;
@@ -183,7 +183,7 @@ textarea {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1px;
     text-transform: none;
     cursor: pointer;
@@ -211,13 +211,25 @@ input[type='radio'] {
   text-transform: uppercase;
   color: var(--text-light);
   margin-top: 20px;
+
+  strong {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    color: var(--rose);
+    margin-top: 6px;
+  }
 }
 
 .rsvp-confirm-note {
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: 15px;
+  font-size: 17px;
   color: var(--text-light);
   margin-top: 12px;
   max-width: 360px;

@@ -81,19 +81,19 @@
   }
 
   p {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.8;
     color: var(--text-light);
     margin-bottom: 20px;
   }
 
   .directions-note {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   a {
     color: var(--sage-dark);
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
