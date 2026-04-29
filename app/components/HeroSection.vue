@@ -1,39 +1,13 @@
 <template>
   <div class="hero">
     <div class="fig-frame">
-
-      <!-- 4 gold coneflower stems -->
       <div class="fig-stems">
-        <img v-for="n in 4" :key="n" class="fig-stem" src="/fig-assets/coneflower-stem.svg" alt="">
+        <img v-for="n in 4" :key="n" src="/fig-assets/coneflower-stem.svg" alt="">
       </div>
 
-      <!-- Dark green leaf shapes -->
-      <img class="fig-leaf fig-leaf-l" src="/fig-assets/Vector.svg" alt="">
-      <img class="fig-leaf fig-leaf-r" src="/fig-assets/Vector.svg" alt="">
+      <img class="fig-leaf fig-leaf-l" src="/fig-assets/bush.svg" alt="">
+      <img class="fig-leaf fig-leaf-r" src="/fig-assets/bush.svg" alt="">
 
-      <!-- Blush petal clusters -->
-      <svg class="fig-petals fig-petals-l" viewBox="0 0 104 106" fill="#E8B5AD" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(52,53)">
-          <ellipse v-for="(deg, i) in petalAngles" :key="i"
-            rx="9" ry="22"
-            :transform="`rotate(${deg})`"
-            :opacity="i % 2 === 0 ? 0.9 : 0.85"
-          />
-          <circle r="10" fill="#C4847A"/>
-        </g>
-      </svg>
-      <svg class="fig-petals fig-petals-r" viewBox="0 0 104 106" fill="#E8B5AD" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(52,53)">
-          <ellipse v-for="(deg, i) in petalAngles" :key="i"
-            rx="9" ry="22"
-            :transform="`rotate(${deg})`"
-            :opacity="i % 2 === 0 ? 0.9 : 0.85"
-          />
-          <circle r="10" fill="#C4847A"/>
-        </g>
-      </svg>
-
-      <!-- Arch card -->
       <div class="hero-arch">
         <div class="hero-heart">♡</div>
         <div class="hero-script">baby</div>
