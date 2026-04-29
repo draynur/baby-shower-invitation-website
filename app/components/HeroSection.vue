@@ -1,12 +1,8 @@
 <template>
   <div class="hero">
     <div class="fig-frame">
-      <div class="fig-stems">
-        <img v-for="n in 4" :key="n" src="/fig-assets/coneflower-stem.svg" alt="">
-      </div>
 
-      <img class="fig-leaf fig-leaf-l" src="/fig-assets/bush.svg" alt="">
-      <img class="fig-leaf fig-leaf-r" src="/fig-assets/bush.svg" alt="">
+      <img class="fig-backdrop" src="/fig-assets/pretty-flowers.svg" alt="">
 
       <div class="hero-arch">
         <div class="hero-heart">♡</div>
@@ -30,10 +26,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const petalAngles = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
-</script>
-
 <style lang="scss" scoped>
 .hero {
   min-height: 100vh;
@@ -47,113 +39,34 @@ const petalAngles = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
   overflow: hidden;
 }
 
+// Width matches the SVG's native 657px so the backdrop fills the frame edge-to-edge.
 .fig-frame {
   position: relative;
-  width: 580px;
+  width: 567px;
   margin: 0 auto;
 
-  @media (max-width: 640px) {
-    width: 340px;
+  @media (max-width: 700px) {
+    width: 100%;
+    max-width: 445px;
   }
 }
 
-.fig-stems {
+.fig-backdrop {
   position: absolute;
   top: 0;
-  left: 16px;
-  width: 550px;
-  height: 416px;
-  overflow: hidden;
-  display: flex;
+  left: 0;
+  width: 100%;
   z-index: 0;
   pointer-events: none;
-
-  @media (max-width: 640px) {
-    width: 320px;
-    left: 10px;
-    height: 244px;
-  }
+  display: block;
 }
 
-.fig-stem {
-  width: 150px;
-  height: 416px;
-  flex-shrink: 0;
-  filter: var(--f-gold);
-
-  @media (max-width: 640px) {
-    width: 88px;
-    height: 244px;
-  }
-}
-
-.fig-leaf {
-  position: absolute;
-  width: 300px;
-  height: 141px;
-  top: 340px;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.9;
-
-  @media (max-width: 640px) {
-    width: 233px;
-    height: 110px;
-    top: 182px;
-  }
-}
-
-.fig-leaf-r {
-  left: 220px;
-
-  @media (max-width: 640px) {
-    left: 105px;
-  }
-}
-
-.fig-leaf-l {
-  left: -60px;
-  transform: scaleX(-1);
-  transform-origin: 0 50%;
-}
-
-.fig-petals {
-  position: absolute;
-  top: 448px;
-  width: 104px;
-  height: 106px;
-  z-index: 3;
-  pointer-events: none;
-
-  @media (max-width: 640px) {
-    top: 264px;
-    width: 62px;
-    height: 62px;
-  }
-}
-
-.fig-petals-l {
-  left: 22px;
-
-  @media (max-width: 640px) {
-    left: 14px;
-  }
-}
-
-.fig-petals-r {
-  right: 22px;
-  transform: scaleX(-1);
-  transform-origin: 50% 50%;
-
-  @media (max-width: 640px) {
-    right: 14px;
-  }
-}
-
+// Arch sits in front of the backdrop. margin-top pushes it down enough for
+// botanical flower tops to be visible above the arch's rounded edge.
 .hero-arch {
   position: relative;
   z-index: 4;
-  margin: 42px auto 0;
+  margin: 80px auto 0;
   background: var(--sage);
   border-radius: 260px 260px 0 0;
   width: 406px;
@@ -163,10 +76,10 @@ const petalAngles = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
   align-items: center;
   box-shadow: 0 8px 40px rgba(78, 110, 68, 0.18);
 
-  @media (max-width: 640px) {
-    width: 238px;
+  @media (max-width: 700px) {
+    width: 80%;
     padding: 36px 28px 40px;
-    margin-top: 24px;
+    margin-top: 48px;
   }
 }
 
@@ -184,7 +97,7 @@ const petalAngles = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
   line-height: 1;
   margin-bottom: 2px;
 
-  @media (max-width: 640px) {
+  @media (max-width: 700px) {
     font-size: 44px;
   }
 }
@@ -223,7 +136,7 @@ const petalAngles = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
   letter-spacing: 1px;
   margin-bottom: 16px;
 
-  @media (max-width: 640px) {
+  @media (max-width: 700px) {
     font-size: 22px;
   }
 }
@@ -243,6 +156,8 @@ const petalAngles = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
 }
 
 .hero-below {
+  position: relative;
+  z-index: 4;
   margin-top: 24px;
   padding-bottom: 16px;
   display: flex;
