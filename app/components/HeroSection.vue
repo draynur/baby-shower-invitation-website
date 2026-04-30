@@ -1,8 +1,11 @@
+<script setup>
+import flowerBackdrop from '../assets/pretty-flowers.svg';
+</script>
 <template>
   <div class="hero">
     <div class="fig-frame">
 
-      <img class="fig-backdrop" src="/fig-assets/pretty-flowers.svg" alt="">
+      <flower-backdrop class="fig-backdrop" />
 
       <div class="hero-arch">
         <div class="hero-heart">♡</div>

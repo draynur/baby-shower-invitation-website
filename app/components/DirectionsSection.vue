@@ -24,8 +24,7 @@
             rel="noopener">
             Open in Google Maps →
           </a>
-          <a href="maps://maps.apple.com/?address=129+N+Race+St,+Urbana,+IL+61801" target="_blank" rel="noopener"
-            class="apple-maps-link">
+          <a href="https://maps.apple/p/_uKQSXxahI243p" target="_blank" rel="noopener" class="apple-maps-link" v-if="$device.isIos">
             Open in Apple Maps →
           </a>
         </div>

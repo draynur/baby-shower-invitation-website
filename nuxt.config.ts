@@ -2,12 +2,19 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+
   app: {
     head: {
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/fig-assets/flower.svg' }]
     }
   },
+
   css: ['~/assets/scss/main.scss'],
+
+  svgo: {
+    defaultImport: 'component'
+  },
+
   vite: {
     optimizeDeps: {
       include: [
@@ -22,5 +29,7 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+
+  modules: ['@nuxtjs/device', 'nuxt-svgo']
 })

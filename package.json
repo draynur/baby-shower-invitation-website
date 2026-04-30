@@ -10,8 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/device": "^4.0.0",
     "animejs": "^4.3.6",
     "nuxt": "^4.4.2",
+    "nuxt-svgo": "^4.2.6",
     "vue": "^3.5.33",
     "vue-router": "^5.0.6"
   },
