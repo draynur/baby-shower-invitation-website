@@ -64,7 +64,10 @@
           </div>
         </div>
         <div class="form-center">
-          <button type="submit" class="btn">Send RSVP</button>
+          <button type="submit" class="btn" :disabled="loading">
+            {{ loading ? 'Sending…' : 'Send RSVP' }}
+          </button>
+          <p v-if="error" class="rsvp-error">{{ error }}</p>
           <p class="rsvp-deadline">Please RSVP by<strong>June 1, 2025</strong></p>
           <p class="rsvp-confirm-note">If you're joining us, you'll receive an email confirmation with the gift registry included.</p>
         </div>
@@ -81,6 +84,8 @@
 
 <script setup lang="ts">
 const submitted = ref(false)
+const loading = ref(false)
+const error = ref('')
 
 const form = reactive({
   fname: '',
@@ -93,8 +98,17 @@ const form = reactive({
   note: ''
 })
 
-function handleSubmit() {
-  submitted.value = true
+async function handleSubmit() {
+  loading.value = true
+  error.value = ''
+  try {
+    await $fetch('/api/rsvp', { method: 'POST', body: { ...form } })
+    submitted.value = true
+  } catch {
+    error.value = 'Something went wrong — please try again or email us directly.'
+  } finally {
+    loading.value = false
+  }
 }
 </script>
 
@@ -236,6 +250,14 @@ input[type='radio'] {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
+}
+
+.rsvp-error {
+  color: var(--rose);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 17px;
+  margin-top: 16px;
 }
 
 .rsvp-success {
