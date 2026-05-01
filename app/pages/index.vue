@@ -1,19 +1,24 @@
 <template>
   <main>
-    <HeroSection />
-    <VenuePhoto />
-    <RsvpSection />
-    <FloralDivider />
-    <RegistrySection />
-    <FloralDivider />
-    <DirectionsSection />
-    <FloralDivider />
-    <ThankYouSection />
-    <SiteFooter />
+    <HeroComingSoon v-if="comingSoon" />
+    <HeroSection v-else />
+    <template v-if="!comingSoon">
+      <VenuePhoto />
+      <RsvpSection />
+      <FloralDivider />
+      <RegistrySection />
+      <FloralDivider />
+      <DirectionsSection />
+      <FloralDivider />
+      <ThankYouSection />
+      <SiteFooter />
+    </template>
   </main>
 </template>
 
 <script setup lang="ts">
+const { comingSoon } = useAppConfig()
+
 useFadeIn()
 
 useHead({
