@@ -4,6 +4,8 @@
     <VenuePhoto />
     <RsvpSection />
     <FloralDivider />
+    <RegistrySection />
+    <FloralDivider />
     <DirectionsSection />
     <FloralDivider />
     <ThankYouSection />

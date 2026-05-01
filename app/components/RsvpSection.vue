@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="form-center">
-          <NuxtTurnstile v-model="turnstileToken" class="" />
+          <NuxtTurnstile v-model="turnstileToken" class="turnstile" />
           <button type="submit" class="btn" :disabled="loading || !turnstileToken">
             {{ loading ? 'Sending…' : 'Send RSVP' }}
           </button>
@@ -222,7 +222,7 @@ input[type='radio'] {
 .turnstile {
   display: flex;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-top: 48px;
 }
 
 .rsvp-deadline {
