@@ -15,7 +15,7 @@ import flowerBackdrop from '../assets/pretty-flowers.svg';
         <div class="hero-join">Join us for a baby shower honoring</div>
         <div class="hero-name">Suzanne Runyard</div>
         <div class="hero-meta">
-          <strong>Sunday, June 14, 2025</strong><br>
+          <strong>Sunday, June 14, 2026</strong><br>
           1:00 — 3:00 PM
         </div>
       </div>

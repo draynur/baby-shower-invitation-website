@@ -68,8 +68,7 @@
             {{ loading ? 'Sending…' : 'Send RSVP' }}
           </button>
           <p v-if="error" class="rsvp-error">{{ error }}</p>
-          <p class="rsvp-deadline">Please RSVP by<strong>June 1, 2025</strong></p>
-          <p class="rsvp-confirm-note">If you're joining us, you'll receive an email confirmation with the gift registry included.</p>
+          <p class="rsvp-deadline">Please RSVP by<strong>June 1, 2026</strong></p>
         </div>
       </form>
 

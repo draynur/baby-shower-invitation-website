@@ -4,11 +4,11 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Hosted By</h4>
-        <p>Shelly Riech<br>&amp; Megan DeLoriea</p>
+        <p>Shelly Riech<br>&amp; Meghan DeLoriea</p>
       </div>
       <div class="footer-col">
         <h4>RSVP Deadline</h4>
-        <p><span class="deadline-date">June 1, 2025</span></p>
+        <p><span class="deadline-date">June 1, 2026</span></p>
       </div>
     </div>
     <p class="footer-small">Site by John</p>
