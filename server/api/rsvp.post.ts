@@ -2,10 +2,22 @@ import { google } from 'googleapis'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
-  const { fname, lname, email, phone, attending, guests, dietary, note } = body
+  const { fname, lname, email, phone, attending, guests, dietary, note, turnstileToken } = body
 
   if (!fname || !lname || !attending) {
     throw createError({ statusCode: 400, statusMessage: 'Missing required fields' })
+  }
+
+  const verification = await $fetch<{ success: boolean }>('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'POST',
+    body: {
+      secret: process.env.TURNSTILE_SECRET_KEY,
+      response: turnstileToken,
+    },
+  })
+
+  if (!verification.success) {
+    throw createError({ statusCode: 400, statusMessage: 'Bot verification failed' })
   }
 
   const auth = new google.auth.JWT({

@@ -32,5 +32,9 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxtjs/device', 'nuxt-svgo']
+  modules: ['@nuxtjs/device', 'nuxt-svgo', '@nuxtjs/turnstile'],
+
+  turnstile: {
+    siteKey: process.env.TURNSTILE_SITE_KEY,
+  }
 })

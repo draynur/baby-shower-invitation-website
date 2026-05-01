@@ -64,7 +64,8 @@
           </div>
         </div>
         <div class="form-center">
-          <button type="submit" class="btn" :disabled="loading">
+          <NuxtTurnstile v-model="turnstileToken" class="" />
+          <button type="submit" class="btn" :disabled="loading || !turnstileToken">
             {{ loading ? 'Sending…' : 'Send RSVP' }}
           </button>
           <p v-if="error" class="rsvp-error">{{ error }}</p>
@@ -85,6 +86,7 @@
 const submitted = ref(false)
 const loading = ref(false)
 const error = ref('')
+const turnstileToken = ref('')
 
 const form = reactive({
   fname: '',
@@ -101,7 +103,7 @@ async function handleSubmit() {
   loading.value = true
   error.value = ''
   try {
-    await $fetch('/api/rsvp', { method: 'POST', body: { ...form } })
+    await $fetch('/api/rsvp', { method: 'POST', body: { ...form, turnstileToken: turnstileToken.value } })
     submitted.value = true
   } catch {
     error.value = 'Something went wrong — please try again or email us directly.'
@@ -215,6 +217,12 @@ input[type='radio'] {
 
 .form-center {
   text-align: center;
+}
+
+.turnstile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .rsvp-deadline {
