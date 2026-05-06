@@ -4,7 +4,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Hosted By</h4>
-        <p>Shelly Riech<br>&amp; Meghan DeLoriea</p>
+        <p>Shelly Riech,<br>Meghan DeLoriea,<br>& Ehrine DeLoriea</p>
       </div>
       <div class="footer-col">
         <h4>RSVP Deadline</h4>
