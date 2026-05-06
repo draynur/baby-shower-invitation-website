@@ -1,5 +1,5 @@
 <template>
-  <section class="fade-in" id="rsvp">
+  <section id="rsvp">
     <div class="section-label">You're Invited</div>
     <h2 class="section-title">RSVP</h2>
     <p class="rsvp-note">

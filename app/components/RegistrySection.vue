@@ -1,5 +1,5 @@
 <template>
-  <section class="fade-in" id="registry">
+  <section id="registry">
     <div class="section-label">The Nursery</div>
     <h2 class="section-title">Gift Registry</h2>
     <div class="registry-wrap">

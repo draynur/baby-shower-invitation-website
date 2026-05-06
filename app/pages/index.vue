@@ -19,7 +19,6 @@
 <script setup lang="ts">
 const { comingSoon } = useAppConfig()
 
-useFadeIn()
 
 useHead({
   title: 'Baby Shower — Suzanne Runyard',

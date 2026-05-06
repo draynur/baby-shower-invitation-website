@@ -1,5 +1,5 @@
 <template>
-  <section class="fade-in">
+  <section>
     <div class="thankyou-block">
       <div class="big-script">Thank you!</div>
       <p>

@@ -1,5 +1,5 @@
 <template>
-  <section class="fade-in" id="directions">
+  <section id="directions">
     <div class="section-label">Getting Here</div>
     <h2 class="section-title">Directions &amp; Venue</h2>
     <div class="directions-grid">
