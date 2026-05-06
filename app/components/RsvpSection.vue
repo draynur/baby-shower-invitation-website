@@ -2,7 +2,11 @@
   <section class="fade-in" id="rsvp">
     <div class="section-label">You're Invited</div>
     <h2 class="section-title">RSVP</h2>
-    <p class="rsvp-note">We can't wait to gather and celebrate with the women in Suzanne's life - children are also welcome!</p>
+    <p class="rsvp-note">
+      We can't wait to gather and celebrate with the women in Suzanne's life - children are also welcome!
+      <br>
+      Wine, appetizers, desserts, and good company will be provided.
+    </p>
 
     <div class="rsvp-wrap">
 
