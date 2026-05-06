@@ -16,15 +16,16 @@
           Urbana, IL 61801
         </p>
         <p class="directions-note">
-          Street parking is available along Race Street and nearby lots. The venue is located in downtown Urbana, just
-          blocks away from our home.
+          The venue is located in Downtown Urbana.
+          Parking is available at the venue and on nearby streets.
         </p>
         <div class="link-group">
           <a href="https://maps.google.com/?q=Analog+Wine+Library+129+N+Race+St+Urbana+IL" target="_blank"
             rel="noopener">
             Open in Google Maps →
           </a>
-          <a href="https://maps.apple/p/_uKQSXxahI243p" target="_blank" rel="noopener" class="apple-maps-link" v-if="$device.isIos">
+          <a href="https://maps.apple/p/_uKQSXxahI243p" target="_blank" rel="noopener" class="apple-maps-link"
+            v-if="$device.isIos">
             Open in Apple Maps →
           </a>
         </div>
