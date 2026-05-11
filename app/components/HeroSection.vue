@@ -21,6 +21,13 @@ import flowerBackdrop from '../assets/pretty-flowers.svg';
       </div>
 
     </div>
+
+    <div class="scroll-hint">
+      <span class="scroll-hint-label">scroll to rsvp</span>
+      <svg class="scroll-hint-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5v14M5 13l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
   </div>
 </template>
 
@@ -182,5 +189,39 @@ import flowerBackdrop from '../assets/pretty-flowers.svg';
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--text-light);
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 4;
+  animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+.scroll-hint-label {
+  font-family: 'Jost', sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--sage);
+  opacity: 0.8;
+}
+
+.scroll-hint-arrow {
+  width: 20px;
+  height: 20px;
+  color: var(--sage);
+  opacity: 0.7;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(6px); }
 }
 </style>
